@@ -11,8 +11,8 @@ public class MoveObject : MonoBehaviour
     Vector3 ogPosition2;
     public controller myController;
 
-    GameObject object1;
-    GameObject object2;
+    public GameObject object1;
+    public GameObject object2;
     bool move;
     // Start is called before the first frame update
     void Start()

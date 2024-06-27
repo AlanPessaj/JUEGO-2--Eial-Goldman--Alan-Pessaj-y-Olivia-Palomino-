@@ -9,7 +9,7 @@ public class controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Inicio();
+
     }
 
     // Update is called once per frame
@@ -68,10 +68,11 @@ public class controller : MonoBehaviour
             Repeat();
         }    
     }
-
+    public GameObject clon1 = moveController.object1;
+    public GameObject clon2 = moveController.object2;
     void Pass()
     {
-
+        
     }
     void Repeat()
     {
