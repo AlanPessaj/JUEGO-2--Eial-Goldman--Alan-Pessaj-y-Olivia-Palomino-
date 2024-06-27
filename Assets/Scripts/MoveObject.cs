@@ -28,8 +28,8 @@ public class MoveObject : MonoBehaviour
         ogPosition2 = controller.selected2.transform.position;
         for (float i = 0; i < 1; i+= 0.1f)
         {
-            controller.selected1.transform.position = Mathf.Lerp(ogPosition1, position1, i);
-            controller.selected2.transform.position = Mathf.Lerp(-ogPosition2, position2, i);
+            /*controller.selected1.transform.position = Mathf.Lerp(ogPosition1, position1, i);
+            controller.selected2.transform.position = Mathf.Lerp(-ogPosition2, position2, i);*/
         }
     }
 }
