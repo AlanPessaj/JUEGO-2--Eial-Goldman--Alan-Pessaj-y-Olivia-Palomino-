@@ -18,6 +18,7 @@ public class controller : MonoBehaviour
     {
         clon1 = moveController.object1;
         clon2 = moveController.object2;
+        Inicio();
     }
 
     // Update is called once per frame
