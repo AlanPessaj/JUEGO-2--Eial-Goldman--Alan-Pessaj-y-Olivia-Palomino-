@@ -29,7 +29,7 @@ public class controller : MonoBehaviour
 
     GameObject Selector()
     {
-        int random = Random.Range(0, 16);
+        int random = Random.Range(0, 15);
         return Productos[random];
     }
     public static GameObject selected1;
