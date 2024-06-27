@@ -20,6 +20,7 @@ public class Producto : MonoBehaviour
 
     GameObject Selector()
     {
-        Random.Range(-1, 18)
+        int random = Random.Range(0, 19);
+        return Productos[random];
     }
 }
