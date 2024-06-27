@@ -44,11 +44,11 @@ public class controller : MonoBehaviour
     }
 
     void Pass()
-    {
+    {//Eial UI
 
     }
     void Repeat()
-    {
+    {//Eial UI
 
     }
 }
