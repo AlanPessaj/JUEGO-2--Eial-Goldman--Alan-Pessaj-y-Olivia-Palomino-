@@ -45,6 +45,8 @@ public class MoveObject : MonoBehaviour
         {
             move = false;
             i = 0;
+            myController.precio1.gameObject.SetActive(true);
+            myController.precio2.gameObject.SetActive(true);
         }
     }
 

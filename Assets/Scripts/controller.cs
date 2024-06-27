@@ -36,10 +36,14 @@ public class controller : MonoBehaviour
     public static GameObject selected2;
     public MoveObject moveController;
     public Text txtMoney;
+    public Text precio1;
+    public Text precio2;
     void Inicio()
     {
         selected1 = Selector();
         selected2 = Selector();
+        precio1.text = selected1.GetComponent<Producto>().Precio.ToString();
+        precio2.text = selected2.GetComponent<Producto>().Precio.ToString();
         moveController.moveObject();
         txtMoney.text = Random.Range(20, 91).ToString();
     }
