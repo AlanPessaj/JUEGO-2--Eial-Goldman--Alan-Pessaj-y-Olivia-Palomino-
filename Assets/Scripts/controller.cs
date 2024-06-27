@@ -9,10 +9,12 @@ public class controller : MonoBehaviour
     public GameObject lost;
     public GameObject endPanel;
     public GameObject[] Productos;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        public GameObject clon1 = moveController.object1;
+        public GameObject clon2 = moveController.object2;
     }
 
     // Update is called once per frame
@@ -40,18 +42,18 @@ public class controller : MonoBehaviour
 
     void btnAlcanza()
     {
-        if(txtMoney.text.ToInt() == (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
+        if(int.Parse(txtMoney.text) == (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
         {
-            Pass();
+            Won();
         }
         else
         {
-            Repeat();
+            Lost();
         }        
     }
     void btnSobra()
     {
-        if(txtMoney.text.ToInt() > (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
+        if(int.Parse(txtMoney.text) > (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
         {
             Won();
         }
@@ -62,7 +64,7 @@ public class controller : MonoBehaviour
     }
     void btnFalta()
     {
-        if(txtMoney.text.ToInt() < (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
+        if(int.Parse(txtMoney.text) < (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
         {
             Won();
         }
@@ -71,8 +73,6 @@ public class controller : MonoBehaviour
             Lost();
         }    
     }
-    public GameObject clon1 = moveController.object1;
-    public GameObject clon2 = moveController.object2;
     void Won()
     {
         Destroy(clon1);
