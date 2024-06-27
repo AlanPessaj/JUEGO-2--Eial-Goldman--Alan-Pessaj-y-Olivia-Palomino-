@@ -15,6 +15,7 @@ public class MoveObject : MonoBehaviour
     public GameObject object1;
     public GameObject object2;
     bool move;
+    bool ended;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,12 +42,17 @@ public class MoveObject : MonoBehaviour
 
             object1.transform.position = temp1;
             object2.transform.position = temp2;
+            ended = false;
         }
         else
         {
-            move = false;
-            i = 0;
-            eleccion.gameObject.SetActive(true);
+            if (!ended)
+            {
+                move = false;
+                i = 0;
+                eleccion.gameObject.SetActive(true);
+                ended = true;
+            }
         }
     }
 
