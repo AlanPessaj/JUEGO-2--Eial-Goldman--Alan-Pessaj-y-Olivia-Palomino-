@@ -16,8 +16,7 @@ public class MoveObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        object1 = Instantiate(controller.selected1);
-        object2 = Instantiate(controller.selected2);
+        
     }
 
     // Update is called once per frame
@@ -28,6 +27,8 @@ public class MoveObject : MonoBehaviour
 
     public void moveObject()
     {
+        object1 = Instantiate(controller.selected1);
+        object2 = Instantiate(controller.selected2);
         ogPosition1 = object1.transform.position;
         ogPosition2 = object2.transform.position;
         for (float i = 0; i < 1; i+= 0.1f)
