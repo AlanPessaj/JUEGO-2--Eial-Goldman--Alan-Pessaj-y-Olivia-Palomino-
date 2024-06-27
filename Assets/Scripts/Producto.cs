@@ -17,4 +17,9 @@ public class Producto : MonoBehaviour
     {
         
     }
+
+    GameObject Selector()
+    {
+        Random.Range(-1, 18)
+    }
 }
