@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class config : MonoBehaviour
+public class controller : MonoBehaviour
 {
+    public GameObject[] Productos;
     // Start is called before the first frame update
     void Start()
     {
