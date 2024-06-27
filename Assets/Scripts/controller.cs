@@ -38,16 +38,38 @@ public class controller : MonoBehaviour
         txtMoney.text = Random.Range(20, 91).ToString();
     }
 
-    void ReciveButton()
+    void btnAlcanza()
     {
-        /*if(Texto.ToInt() == (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio)){
-            Won();
+        if(txtMoney.text.ToInt() == (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
+        {
+            Pass();
         }
         else
         {
-            Lost();
-        }*/
-        
+            Repeat();
+        }        
+    }
+    void btnSobra()
+    {
+        if(txtMoney.text.ToInt() > (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
+        {
+            Pass();
+        }
+        else
+        {
+            Repeat();
+        }
+    }
+    void btnFalta()
+    {
+        if(txtMoney.text.ToInt() < (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
+        {
+            Pass();
+        }
+        else
+        {
+            Repeat();
+        }    
     }
 
     void Won()
