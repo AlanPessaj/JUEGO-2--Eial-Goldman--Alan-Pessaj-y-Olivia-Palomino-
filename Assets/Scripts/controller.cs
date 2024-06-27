@@ -8,7 +8,7 @@ public class controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Inicio();
     }
 
     // Update is called once per frame
