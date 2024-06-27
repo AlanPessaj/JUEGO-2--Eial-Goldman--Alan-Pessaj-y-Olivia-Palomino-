@@ -1355,8 +1355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4f8bb8c346cd046b4758dcde3060c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position1: {x: 0, y: 0, z: 0}
-  position2: {x: 0, y: 0, z: 0}
+  position1: {x: 5, y: 5, z: -4}
+  position2: {x: 3.7, y: 5.2, z: -6}
   myController: {fileID: 1362598647}
 --- !u!4 &1397991142
 Transform:
