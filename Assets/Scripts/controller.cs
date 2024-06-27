@@ -44,7 +44,7 @@ public class controller : MonoBehaviour
         txtMoney.text = Random.Range(20, 91).ToString();
     }
 
-    void btnAlcanza()
+    public void btnAlcanza()
     {
         if(int.Parse(txtMoney.text) == (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
         {
@@ -55,7 +55,7 @@ public class controller : MonoBehaviour
             Lost();
         }        
     }
-    void btnSobra()
+    public void btnSobra()
     {
         if(int.Parse(txtMoney.text) > (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
         {
@@ -66,7 +66,7 @@ public class controller : MonoBehaviour
             Lost();
         }
     }
-    void btnFalta()
+    public void btnFalta()
     {
         if(int.Parse(txtMoney.text) < (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
         {
