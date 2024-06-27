@@ -53,32 +53,35 @@ public class controller : MonoBehaviour
     {
         if(txtMoney.text.ToInt() > (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
         {
-            Pass();
+            Won();
         }
         else
         {
-            Repeat();
+            Lost();
         }
     }
     void btnFalta()
     {
         if(txtMoney.text.ToInt() < (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio))
         {
-            Pass();
+            Won();
         }
         else
         {
-            Repeat();
+            Lost();
         }    
     }
-
-    void Pass()
+    public GameObject clon1 = moveController.object1;
+    public GameObject clon2 = moveController.object2;
+    void Won()
     {
-        
+        Destroy(clon1);
+        Destroy(clon2);
     }
     void Lost()
     {
-
+        Destroy(clon1);
+        Destroy(clon2);
     }
     public void Exit()
     {
