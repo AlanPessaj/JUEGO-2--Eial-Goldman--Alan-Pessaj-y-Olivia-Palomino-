@@ -497,7 +497,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 122475218}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1362598647}
+        m_MethodName: btnAlcanza
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &122475218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1394,7 +1405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &382588104
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1547,7 +1558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -285.3589, y: -204.07486}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &528769234
@@ -2582,9 +2593,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82fafb6284f096144b6908f5d9a4fd90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  won: {fileID: 1921141723}
-  lost: {fileID: 711772413}
-  endPanel: {fileID: 528769232}
+  won: {fileID: 0}
+  lost: {fileID: 0}
+  endPanel: {fileID: 0}
   Productos:
   - {fileID: 1550040379}
   - {fileID: 286832839}
@@ -2601,6 +2612,8 @@ MonoBehaviour:
   - {fileID: 87949279}
   - {fileID: 1398028998}
   - {fileID: 727007827}
+  clon1: {fileID: 0}
+  clon2: {fileID: 0}
   moveController: {fileID: 1362598649}
   txtMoney: {fileID: 1152849442}
 --- !u!4 &1362598648
@@ -2632,6 +2645,8 @@ MonoBehaviour:
   position1: {x: 5, y: 5, z: -4}
   position2: {x: 3.7, y: 5.2, z: -6}
   myController: {fileID: 1362598647}
+  object1: {fileID: 0}
+  object2: {fileID: 0}
 --- !u!4 &1397991142
 Transform:
   m_ObjectHideFlags: 0
@@ -2892,7 +2907,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1498097971}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1362598647}
+        m_MethodName: btnSobra
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1498097971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3556,7 +3582,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1867716010}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1362598647}
+        m_MethodName: btnFalta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1867716010
 MonoBehaviour:
   m_ObjectHideFlags: 0
