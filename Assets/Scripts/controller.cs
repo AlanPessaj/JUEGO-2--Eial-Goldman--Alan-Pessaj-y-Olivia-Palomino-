@@ -10,12 +10,14 @@ public class controller : MonoBehaviour
     public GameObject lost;
     public GameObject endPanel;
     public GameObject[] Productos;
+    public GameObject clon1;
+    public GameObject clon2;
 
     // Start is called before the first frame update
     void Start()
     {
-        public GameObject clon1 = moveController.object1;
-        public GameObject clon2 = moveController.object2;
+        clon1 = moveController.object1;
+        clon2 = moveController.object2;
     }
 
     // Update is called once per frame
