@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class controller : MonoBehaviour
 {
+    public GameObject won;
+    public GameObject lost;
+    public GameObject endPanel;
     public GameObject[] Productos;
     // Start is called before the first frame update
     void Start()
@@ -68,13 +71,25 @@ public class controller : MonoBehaviour
             Repeat();
         }    
     }
-    public GameObject clon1 = moveController.object1;
-    public GameObject clon2 = moveController.object2;
+
     void Pass()
     {
         
     }
-    void Repeat()
+    void Lost()
+    {
+
+    }
+    public void Exit()
+    {
+
+    }
+    public void Restart()
+    {
+
+    }
+
+    public void Retry()
     {
 
     }
