@@ -26,11 +26,13 @@ public class controller : MonoBehaviour
     public static GameObject selected1;
     public static GameObject selected2;
     public MoveObject moveController;
+    public Text txtMoney;
     void Inicio()
     {
         selected1 = Selector();
         selected2 = Selector();
         moveController.moveObject();
+        txtMoney.text = Random.Range(20, 91).ToString();
     }
 
     void ReciveButton()
