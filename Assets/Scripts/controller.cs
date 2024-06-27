@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class controller : MonoBehaviour
 {
@@ -34,21 +35,22 @@ public class controller : MonoBehaviour
 
     void ReciveButton()
     {
-        /*if(Convert.ToInt32(Texto) == (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio)){
+        /*if(Texto.ToInt() == (selected1.GetComponent<Producto>().Precio)+(selected2.GetComponent<Producto>().Precio)){
             Pass();
         }
         else
         {
             Repeat();
         }*/
+        
     }
 
     void Pass()
-    {//Eial UI
+    {
 
     }
     void Repeat()
-    {//Eial UI
+    {
 
     }
 }
