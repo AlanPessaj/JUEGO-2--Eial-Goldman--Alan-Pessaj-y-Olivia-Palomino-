@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Producto : MonoBehaviour
 {
-    public GameObject[] Productos;
-    public int[] Precios = {10, 20, 15, 8, 23, 16, 31, 9, 6, 14, 12, 19, 16, 29, 21, 26, 28, 25, 4};
+
+    public int Precio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +19,4 @@ public class Producto : MonoBehaviour
         
     }
 
-    GameObject Selector()
-    {
-        int random = Random.Range(0, 19);
-        return Productos[random];
-    }
 }
