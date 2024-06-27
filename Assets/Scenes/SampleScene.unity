@@ -2593,9 +2593,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82fafb6284f096144b6908f5d9a4fd90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  won: {fileID: 0}
-  lost: {fileID: 0}
-  endPanel: {fileID: 0}
+  won: {fileID: 1921141723}
+  lost: {fileID: 711772413}
+  endPanel: {fileID: 528769232}
   Productos:
   - {fileID: 1550040379}
   - {fileID: 286832839}
