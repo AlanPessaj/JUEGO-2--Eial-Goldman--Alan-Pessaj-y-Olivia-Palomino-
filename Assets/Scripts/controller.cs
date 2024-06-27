@@ -87,9 +87,11 @@ public class controller : MonoBehaviour
         Destroy(clon2);
         endPanel.SetActive(true);
         won.SetActive(true);
+        moveController.eleccion.SetActive(false);
     }
     void Lost()
     {
+        moveController.eleccion.SetActive(false);
         endPanel.SetActive(true);
         lost.SetActive(true);
     }
@@ -106,5 +108,6 @@ public class controller : MonoBehaviour
     {
         endPanel.SetActive(false);
         lost.SetActive(false);
+        moveController.eleccion.SetActive(true);
     }
 }

@@ -1405,7 +1405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &382588104
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2646,6 +2646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4f8bb8c346cd046b4758dcde3060c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eleccion: {fileID: 382588103}
   position1: {x: 5, y: 5, z: -4}
   position2: {x: 3.7, y: 5.2, z: -6}
   myController: {fileID: 1362598647}
@@ -3266,7 +3267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1687205488
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3764,7 +3765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2020379320
 RectTransform:
   m_ObjectHideFlags: 0
