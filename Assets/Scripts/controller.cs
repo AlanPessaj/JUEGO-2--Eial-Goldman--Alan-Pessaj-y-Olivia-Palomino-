@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class controller : MonoBehaviour
 {
@@ -77,23 +78,26 @@ public class controller : MonoBehaviour
     {
         Destroy(clon1);
         Destroy(clon2);
+        endPanel.SetActive(true);
+        won.SetActive(true);
     }
     void Lost()
     {
-        Destroy(clon1);
-        Destroy(clon2);
+        endPanel.SetActive(true);
+        lost.SetActive(true);
     }
     public void Exit()
     {
-
+        SceneManager.LoadScene("SeleccionarJuegos");
     }
     public void Restart()
     {
-
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void Retry()
     {
-
+        endPanel.SetActive(false);
+        lost.SetActive(false);
     }
 }
