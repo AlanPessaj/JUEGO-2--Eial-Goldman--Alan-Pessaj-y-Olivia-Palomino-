@@ -45,7 +45,7 @@ public class controller : MonoBehaviour
         precio1.text = selected1.GetComponent<Producto>().Precio.ToString();
         precio2.text = selected2.GetComponent<Producto>().Precio.ToString();
         moveController.moveObject();
-        txtMoney.text = Random.Range(20, 91).ToString();
+        txtMoney.text = Random.Range(35, 101).ToString();
     }
 
     public void btnAlcanza()
